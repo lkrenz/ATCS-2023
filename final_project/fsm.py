@@ -1,7 +1,7 @@
 class FSM :
     def __init__(self) :
         self.fsm = {}
-        self.current_state = 0
+        self.current_state = "intro"
     
     def add_transtition(self, input_symbol, input_state, action, new_state) :
         self.fsm[(input_symbol, input_state)] = (action, new_state)
